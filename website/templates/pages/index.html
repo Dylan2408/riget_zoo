@@ -1,0 +1,42 @@
+{% extends 'pages/base.html' %}
+
+{% load static %}
+
+{% block content %}
+
+  <div class="row row-cols-1 row-cols-md-3 g-4 d-flex justify-content-center align-items-center" style="min-height: 80vh;">
+    <div class="col">
+      <div class="card card-equal-height" style="background-color: #84AE80;">
+        <img src="{% static 'images/tiger.jpg' %}" class="card-img-top custom-img" alt="..." style="min-height: 100px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">Information page</h5>
+          <p class="card-text" style="color: white;">Riget Zoo information page includes everything you might need for a day out! Take a look at our Zoo map, see how to get to our zoo and any other information you may need.
+          </p>
+          <a href="#" class="btn btn-custom" style="background-color: #536553;">Click here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-equal-height" style="background-color: #84AE80;">
+        <img src="{% static 'images/sloth.jpg' %}" class="card-img-top custom-img" alt="..." style="min-height: 100px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">Our animals</h5>
+          <p class="card-text" style="color: white;">Riget Zoo has over 50 different species of animals for our guests to view, take a look to see some of our top rated aniamls and some very interested facts about them!
+          </p>
+          <a href="#" class="btn btn-custom" style="background-color: #536553;">Click here</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card card-equal-height" style="background-color: #84AE80;">
+        <img src="{% static 'images/Panda.jpg' %}" class="card-img-top custom-img" alt="..." style="min-height: 100px;">
+        <div class="card-body">
+          <h5 class="card-title" style="color: white;">Education</h5>
+          <p class="card-text" style="color: white;">Are you a teacher? Book your students an unforgetable experince to riget zoo today! We can offer an exclusive discount for schools who aere looking to visit!
+          </p>
+          <a href="#" class="btn btn-custom" style="background-color: #536553;">Click here</a>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

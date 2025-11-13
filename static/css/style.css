@@ -1,0 +1,32 @@
+.form-layout{
+    background-color: #284A31;
+    color: white;
+    justify-content: center;
+    
+}
+
+.form-layout2{
+    background-color: #284A31;
+    color: white;
+    justify-content: center;
+
+}
+
+h3{
+    color: white;
+}
+
+body{
+    background-color: #5B7C55;
+}
+
+.custom-navbar{
+    background-color: #093C17 !important;
+}
+
+
+.custom-img{
+    height: 200px;
+    object-fit: cover;
+}
+
