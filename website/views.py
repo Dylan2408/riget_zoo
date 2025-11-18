@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect
 from .forms import CreateUserForm, LoginForm, Zoo_Booking_Form
 from django.contrib.auth.models import auth
 from django.contrib.auth import authenticate
+from django.contrib import messages
 
 
 # Create your views here.
@@ -77,7 +78,7 @@ def zoo(request):
 
         obj.save()
 
-        message.success(request, "Ticket booked successfully")
+        messages.success(request, "Ticket booked successfully")
         return redirect('zoo')
     else:
         print("There was a problem with your purchase, try again.")

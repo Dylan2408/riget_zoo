@@ -9,9 +9,9 @@ function update_cost(){
         price.innerHTML = "Ticket cost: Date not chosen"
     }else{
 
-        let total = parseInt(adults.valve) * 40
-                    + parseInt(children.valve) * 20
-                    + parseInt(oaps.valve) * 25
+        let total = parseInt(adults.value) * 40
+                    + parseInt(children.value) * 20
+                    + parseInt(oaps.value) * 25
 
         total = total
 
@@ -20,9 +20,9 @@ function update_cost(){
     }
 }
 
-let adults = document.getElementById("id_hotel_booking_adults")
+let adults = document.getElementById("id_zoo_booking_adults")
 adults.addEventListener("change", update_cost)
-let children = document.getElementById("id_hotel_booking_children")
+let children = document.getElementById("id_zoo_booking_children")
 children.addEventListener("change", update_cost)
-let oaps = document.getElementById("id_hotel_booking_oaps")
+let oaps = document.getElementById("id_zoo_booking_oap")
 oaps.addEventListener("change", update_cost)
